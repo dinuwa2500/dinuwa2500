@@ -1,6 +1,6 @@
 # 👋 Hey there, I'm [Lakviru Perera]!
 
-![Profile Views](https://komarev.com/ghpvc/?username=your-github-username&style=flat-square)
+![Profile Views](https://komarev.com/ghpvc/?username=your-github-dinuwa2500&style=flat-square)
 
 🎯 Passionate about tech, coding, and creating meaningful digital experiences.  
 🚀 I'm currently diving into **Python** and the **MERN stack** (MongoDB, Express.js, React, Node.js).  
