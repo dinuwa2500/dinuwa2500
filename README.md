@@ -39,7 +39,7 @@
 ## 📈 GitHub Stats
 
 
- ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?dinuwa2500=anuraghazra&size_weight=0.5&count_weight=0.5)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dinuwa2500&layout=donut-vertical)](https://github.com/anuraghazra/github-readme-stats)
 
 
 ---
