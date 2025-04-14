@@ -36,9 +36,7 @@
 ## 📂 My Repositories
 
 <div align="center">
-  <a href="https://github.com/dinuwa2500?tab=repositories">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dinuwa2500&repo=your-TimeKeeper " alt="Pinned Repos" />
-  </a>
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dinuwa2500&repo=TimeKeeper " alt="Pinned Repos" />
 </div>
 
 
