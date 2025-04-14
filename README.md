@@ -36,7 +36,7 @@
 ## 📂 My Repositories
 
 <div align="center">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dinuwa2500&repo=TimeKeeper " alt="Pinned Repos" />
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=dinuwa2500&repo=TimeKeeper](https://github.com/anuraghazra/github-readme-stats)
 </div>
 
 
