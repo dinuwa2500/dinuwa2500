@@ -33,6 +33,17 @@
 
 ---
 
+
+---
+
+## 📈 GitHub Stats
+
+<div align="center">
+ ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?dinuwa2500=anuraghazra&size_weight=0.5&count_weight=0.5)
+</div>
+
+---
+
 ## 📫 Let's Connect
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/your-link)
