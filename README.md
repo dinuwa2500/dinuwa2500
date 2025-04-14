@@ -1,4 +1,4 @@
-# 👋 Hey there, I'm [Lakviru Perera]!
+# 👋 Hey there, I'm Lakviru Perera!
 
 ![Profile Views](https://komarev.com/ghpvc/?username=your-github-dinuwa2500&style=flat-square)
 
@@ -55,7 +55,6 @@
 ## 📫 Let's Connect
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/your-link)
-[![Twitter](https://img.shields.io/badge/-Twitter-blue?style=flat-square&logo=twitter)](https://twitter.com/your-handle)
 [![Portfolio](https://img.shields.io/badge/-Portfolio-black?style=flat-square&logo=web)](https://yourportfolio.com)
 [![Gmail](https://img.shields.io/badge/-Gmail-red?style=flat-square&logo=gmail)](mailto:your.email@gmail.com)
 
