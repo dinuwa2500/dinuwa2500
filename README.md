@@ -3,8 +3,9 @@
 ![Profile Views](https://komarev.com/ghpvc/?username=your-github-username&style=flat-square)
 
 🎯 Passionate about tech, coding, and creating meaningful digital experiences.  
-💡 Currently exploring **[topics you're learning]**.  
-🚀 Building cool stuff with **[your tech stack, e.g., MERN / Python / Java / etc.]**.  
+🚀 I'm currently diving into **Python** and the **MERN stack** (MongoDB, Express.js, React, Node.js).  
+🧠 I love building projects that solve real-world problems and help me grow as a developer.  
+📚 Always learning and exploring the world of tech.
 📚 Lifelong learner, always tinkering with new ideas.
 
 ---
