@@ -37,7 +37,7 @@
 ## 📂 My Repositories
 
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=dinuwa2500&repo=TimeKeeper)](https://github.com/dinuwa2500/TimeKeeper)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=dinuwa2500&repo=HomeMade-React)](https://github.com/dinuwa2500/HomeMade-React)
 
 
 
