@@ -56,7 +56,7 @@
 ## 📫 Let's Connect
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/lakviru-perera-006050371/)
-[![Portfolio](https://img.shields.io/badge/-Portfolio-black?style=flat-square&logo=web)](https://dinuwa2500.github.io/portfolio/)
+[![Portfolio](https://img.shields.io/badge/-Portfolio-black?style=flat-square&logo=web)](https://lakviru-portfolio.vercel.app/)
 [![Gmail](https://img.shields.io/badge/-Gmail-red?style=flat-square&logo=gmail)](mailto:dinuwaperera123@gmail.com)
 
 ---
