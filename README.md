@@ -4,7 +4,7 @@
 
   <!-- Animated Typing Tagline -->
   <a href="https://lakviru-portfolio.vercel.app/">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=6366F1&center=true&vCenter=true&width=620&lines=Software+Engineer+%26+Full+Stack+Developer;Next.js+%7C+TypeScript+%7C+Node.js+%7C+Python;Architecting+Scalable+Cloud-Native+Systems;Building+Modern%2C+High-Performance+Web+Apps" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=6366F1&center=true&vCenter=true&width=620&lines=Software+Engineer+%26+Full+Stack+Developer;Next.js+%7C+TypeScript+%7C+Flutter+%7C+Node.js;Architecting+Scalable+Cloud-Native+Systems;Building+Modern+Web+%26+Cross-Platform+Apps" alt="Typing SVG" />
   </a>
 
   <br />
@@ -35,7 +35,7 @@ status: Open to Software Engineering & Full-Stack Opportunities
 ```
 
 - 💡 **Passion**: Designing and implementing scalable backend systems, resilient cloud-native architectures, and intuitive web experiences.
-- ⚡ **Core Stack**: **TypeScript**, **Next.js (App Router)**, **React**, **Node.js**, and **Python**.
+- ⚡ **Core Stack**: **TypeScript**, **Next.js (App Router)**, **React**, **Flutter / Dart**, **Node.js**, and **Python**.
 - 🛠️ **Engineering Focus**: Real-time event streaming (SSE/WebSockets), parallel chunk uploads, database optimization, and containerized deployments.
 - 🚀 **Currently Building**: High-speed cloud utilities and modern full-stack web applications.
 - 🤝 **Collaboration**: Always excited to collaborate on impactful open-source tools and challenging software engineering problems.
@@ -49,14 +49,14 @@ status: Open to Software Engineering & Full-Stack Opportunities
 #### 🌐 Programming Languages
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=ts,js,py,java,cpp,html,css&theme=dark" alt="Languages" />
+    <img src="https://skillicons.dev/icons?i=ts,js,dart,py,java,cpp,html,css&theme=dark" alt="Languages" />
   </a>
 </p>
 
-#### 🎨 Frontend Architecture
+#### 🎨 Frontend & Mobile Architecture
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,redux,vite,bootstrap&theme=dark" alt="Frontend Stack" />
+    <img src="https://skillicons.dev/icons?i=react,nextjs,flutter,tailwind,redux,vite,bootstrap&theme=dark" alt="Frontend & Mobile Stack" />
   </a>
 </p>
 
@@ -128,11 +128,12 @@ status: Open to Software Engineering & Full-Stack Opportunities
           <img src="https://img.shields.io/badge/Repository-Job--Mailer-8b5cf6?style=flat-square&logo=github" alt="Job Mailer Repo" />
         </a>
       </p>
-      <p>Automated email dispatcher designed to streamline customized outreach and job applications at scale with template customization and reliable delivery tracking.</p>
+      <p>Cross-platform client engineered with Flutter and Dart, utilizing custom HTML email templating to automate, streamline, and dispatch tailored job applications.</p>
       <p>
-        <img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-        <img src="https://img.shields.io/badge/-Automation-4B5563?style=flat-square" />
-        <img src="https://img.shields.io/badge/-SMTP-10B981?style=flat-square" />
+        <img src="https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" />
+        <img src="https://img.shields.io/badge/-Dart-0175C2?style=flat-square&logo=dart&logoColor=white" />
+        <img src="https://img.shields.io/badge/-HTML5_Templates-E34F26?style=flat-square&logo=html5&logoColor=white" />
+        <img src="https://img.shields.io/badge/-Cross--Platform-4B5563?style=flat-square" />
       </p>
     </td>
     <td width="50%" valign="top">
