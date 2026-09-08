@@ -1,0 +1,18 @@
+name: "✍️ Sign the Guestbook"
+description: "Leave a friendly message or note on my profile!"
+title: "Guestbook: "
+labels: ["guestbook"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Thanks for stopping by! 👋
+        Please leave your message below. Once submitted, GitHub Actions will automatically add your username, avatar, and message to the Guestbook on my profile README!
+  - type: textarea
+    id: message
+    attributes:
+      label: Your Message
+      description: Write your greeting or note here (keep it friendly!).
+      placeholder: "Hey Lakviru! Awesome portfolio and projects, keep up the great work! 🚀"
+    validations:
+      required: true

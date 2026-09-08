@@ -183,6 +183,24 @@ status: Open to Software Engineering & Full-Stack Opportunities
 
 ---
 
+### 📖 Profile Guestbook
+
+<p align="center">
+  <b>Visiting my profile? Feel free to leave a quick message or say hello!</b>
+  <br /><br />
+  <a href="https://github.com/dinuwa2500/dinuwa2500/issues/new?template=guestbook.yml&title=Guestbook+Sign">
+    <img src="https://img.shields.io/badge/✍️_Sign_My_Guestbook-Click_Here-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="Sign Guestbook" />
+  </a>
+</p>
+
+<!-- GUESTBOOK_START -->
+| Visitor | Message | Date |
+| :---: | :--- | :---: |
+| <a href="https://github.com/dinuwa2500"><img src="https://github.com/dinuwa2500.png?size=50" width="38" height="38" style="border-radius:50%;" alt="dinuwa2500"/><br/><sub><b>dinuwa2500</b></sub></a> | Welcome to my profile! Feel free to sign the guestbook and say hi! 👋✨ | <sub>2026-09-08</sub> |
+<!-- GUESTBOOK_END -->
+
+---
+
 ### 📬 Let's Connect
 
 <p align="center">

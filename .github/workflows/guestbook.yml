@@ -1,0 +1,126 @@
+name: Update Profile Guestbook
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  update-guestbook:
+    if: contains(github.event.issue.labels.*.name, 'guestbook')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Process Guestbook Entry
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+
+            const issue = context.payload.issue;
+            const user = issue.user.login;
+            const avatar = issue.user.avatar_url;
+            const rawBody = issue.body || '';
+
+            // Extract message from Issue form format
+            let message = '';
+            const match = rawBody.match(/### Your Message\s+([\s\S]*?)(?=(###|$))/i);
+            if (match && match[1]) {
+              message = match[1].trim();
+            } else {
+              message = rawBody.trim();
+            }
+
+            // Sanitize message
+            message = message
+              .replace(/<[^>]*>?/gm, '') // Strip HTML tags
+              .replace(/[\r\n]+/g, ' ')   // Replace linebreaks with spaces
+              .replace(/\|/g, '&#124;')   // Escape table pipes
+              .trim();
+
+            if (message.length > 200) {
+              message = message.substring(0, 197) + '...';
+            }
+
+            if (!message) {
+              message = 'Hello world! 👋';
+            }
+
+            const date = new Date().toISOString().split('T')[0];
+
+            // 1. Update data/guestbook.json
+            const dataFilePath = path.join(process.env.GITHUB_WORKSPACE, 'data', 'guestbook.json');
+            let entries = [];
+            if (fs.existsSync(dataFilePath)) {
+              try {
+                entries = JSON.parse(fs.readFileSync(dataFilePath, 'utf8'));
+              } catch (e) {
+                entries = [];
+              }
+            }
+
+            // Add new entry to the beginning
+            entries.unshift({
+              username: user,
+              avatar: avatar,
+              message: message,
+              date: date
+            });
+
+            fs.writeFileSync(dataFilePath, JSON.stringify(entries, null, 2) + '\n', 'utf8');
+
+            // 2. Generate Markdown table (show latest 6 entries)
+            const maxDisplay = 6;
+            const displayEntries = entries.slice(0, maxDisplay);
+
+            let tableContent = `\n| Visitor | Message | Date |\n| :---: | :--- | :---: |\n`;
+            for (const entry of displayEntries) {
+              tableContent += `| <a href="https://github.com/${entry.username}"><img src="${entry.avatar}" width="38" height="38" style="border-radius:50%;" alt="${entry.username}"/><br/><sub><b>${entry.username}</b></sub></a> | ${entry.message} | <sub>${entry.date}</sub> |\n`;
+            }
+
+            // 3. Update README.md
+            const readmePath = path.join(process.env.GITHUB_WORKSPACE, 'README.md');
+            let readme = fs.readFileSync(readmePath, 'utf8');
+
+            const startMarker = '<!-- GUESTBOOK_START -->';
+            const endMarker = '<!-- GUESTBOOK_END -->';
+
+            const startIndex = readme.indexOf(startMarker);
+            const endIndex = readme.indexOf(endMarker);
+
+            if (startIndex !== -1 && endIndex !== -1) {
+              readme = readme.substring(0, startIndex + startMarker.length) +
+                       '\n' + tableContent + '\n' +
+                       readme.substring(endIndex);
+              fs.writeFileSync(readmePath, readme, 'utf8');
+            }
+
+            // 4. Comment on issue and close it
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              body: `Thank you @${user} for signing my guestbook! 🚀 Your message has been pinned to my profile README.`
+            });
+
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              state: 'closed',
+              state_reason: 'completed'
+            });
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md data/guestbook.json
+          git diff --staged --quiet || (git commit -m "Update guestbook: signed by @${{ github.event.issue.user.login }}" && git pull --rebase && git push)
